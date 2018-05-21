@@ -35,7 +35,7 @@ const getPlayerNextXCoordinate = (player, direction) => {
   } else if (direction === RIGHT) {
     nextPlayerXCoordinate = playerXCoordinate +4
   } else if (direction === UP || direction === DOWN) {
-    nextPlayerXCoordinate = playerXCoordinate +4
+    nextPlayerXCoordinate = playerXCoordinate -4
   }
 
   return nextPlayerXCoordinate
@@ -49,7 +49,7 @@ const getPlayerNextYCoordinate = (player, direction) => {
   if (direction === LEFT || direction === RIGHT) {
     nextPlayerYCoordinate = playerYCoordinate
   } else if (direction === UP) {
-    nextPlayerYCoordinate = playerYCoordinate -4
+    nextPlayerYCoordinate = playerYCoordinate +4
   } else if (direction === DOWN) {
     nextPlayerYCoordinate = playerYCoordinate -4
   }
